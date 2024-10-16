@@ -1,0 +1,22 @@
+version: '3.9'
+
+networks:
+  java-exercise-network:
+    driver: bridge
+    
+services:
+  java-exercise-postgres:
+    image: bitnami/postgresql:latest
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=guests
+    volumes:
+      - guests_pg_data:/bitnami/postgresql
+    networks:
+      - java-exercise-network
+
+volumes:
+  guests_pg_data:

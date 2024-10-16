@@ -145,9 +145,14 @@ git bundle verify repo.bundle
 # General notes
 - Docker composer set to run postgres to execute get into the project folder and execute the comand: docker compose up
 - To run the projet need to run on local.
+- The project use LOMBOK, make sure to have set.
 - The properties had been set the postgres conection
 - The API Usage can be done via swagger: http://localhost:8080/swagger-ui/index.html#/
-- There is no tests in the project due time - 3hr long coding.
+
+
+# Personal notes
+- There is no tests in the project due time - 3hr-3:30hr, this time includes everything in this repo. 
+- TODO List: Finish the README, Do the case tests, finish the docker setup.
 
 
 
